@@ -30,6 +30,9 @@ a {
 .gap-15 {
   gap: 15px;
 }
+.gap-30 {
+  gap: 30px;
+}
 /* Header */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
@@ -45,8 +48,19 @@ a {
   width: 35px;
   height: 35px;
 }
-.header-bottom .menu-links a {
+.header-bottom .menu-links a,
+.header-bottom .dropdown button {
   color: white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
 }
-
+.header-bottom .dropdown button:focus {
+  box-shadow: none;
+}
+.header-bottom .dropdown button::before {
+  content: url("../public/images/menu.svg");
+}
 /* Header End */
