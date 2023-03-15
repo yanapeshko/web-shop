@@ -63,4 +63,12 @@ a {
 .header-bottom .dropdown button::before {
   content: url("../public/images/menu.svg");
 }
+.header-bottom .dropdown-menu {
+  background-color: var(--color-131921);
+  width: 100%;
+  transform: translate(0px, 57px, 0px) !important;
+}
+.header-bottom .dropdown-item:hover {
+  background-color: transparent;
+}
 /* Header End */

@@ -100,28 +100,30 @@ const Header = () => {
                 <div>
                   <div className="dropdown">
                     <button
-                      className="btn btn-secondary dropdown-toggle bg-transparent border-0"
+                      className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Shop Categories
+                      <span className="me-5 d-inline-block">
+                        Shop Categories
+                      </span>
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="#">
                           Action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="#">
                           Another action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="#">
                           Something else here
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
