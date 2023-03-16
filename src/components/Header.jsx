@@ -111,17 +111,17 @@ const Header = () => {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <Link className="dropdown-item text-white" to="#">
+                        <Link className="dropdown-item text-white" to="">
                           Action
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item text-white" to="#">
+                        <Link className="dropdown-item text-white" to="">
                           Another action
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item text-white" to="#">
+                        <Link className="dropdown-item text-white" to="">
                           Something else here
                         </Link>
                       </li>

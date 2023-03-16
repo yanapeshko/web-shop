@@ -68,7 +68,13 @@ a {
   width: 100%;
   transform: translate(0px, 57px, 0px) !important;
 }
+.header-bottom .dropdown-item {
+  padding: 20px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid var(--color-3b4149);
+}
 .header-bottom .dropdown-item:hover {
   background-color: transparent;
+  color: var(--color-febd69) !important;
 }
 /* Header End */
