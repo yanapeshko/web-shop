@@ -35,15 +35,46 @@ const Footer = () => {
           <div className="row">
             <div className="col-4">
               <h4 className="text-white mb-4">Contact us</h4>
-              <div></div>
+              <div>
+                <address className="text-white fs-6">
+                  Hno : 277 Near Vill chopal, <br />
+                  Sonipat, Haryana
+                  <br />
+                  PinCode: 131103
+                </address>
+                <a
+                  href="tel:+91 8264954234"
+                  className="mt-4 d-block mb-2 text-white"
+                >
+                  +91 8264954234
+                </a>
+                <a
+                  href="mailto:yanapeshko917@gmail.com "
+                  className="mt-4 d-block mb-2 text-white"
+                >
+                  yanapeshko917@gmail.com
+                </a>
+                <div className="social_icons"></div>
+              </div>
             </div>
             <div className="col-3">
               <h4 className="text-white mb-4">Information</h4>
-              <div></div>
+              <div className="footer-link d-flex flex-column">
+                <Link className="text-white py-2 mb-1">Privacy Policy</Link>
+                <Link className="text-white py-2 mb-1">Refund Policy</Link>
+                <Link className="text-white py-2 mb-1">Shipping Policy</Link>
+                <Link className="text-white py-2 mb-1">Terms & Service</Link>
+                <Link className="text-white py-2 mb-1">Blogs</Link>
+              </div>
             </div>
             <div className="col-3">
               <h4 className="text-white mb-4">Account</h4>
-              <div></div>
+
+              <div className="footer-link d-flex flex-column">
+                <Link className="text-white py-2 mb-1">About Us</Link>
+                <Link className="text-white py-2 mb-1">Faq</Link>
+                <Link className="text-white py-2 mb-1">Contact</Link>
+              </div>
             </div>
             <div className="col-2">
               <h4 className="text-white mb-4">Quick Links</h4>
