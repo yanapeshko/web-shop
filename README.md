@@ -1,1 +1,1 @@
-An ecommerce store using MERN stack
+eCommerce store using MERN stack
