@@ -166,4 +166,14 @@ fotter .input-group-text {
   background-color: var(--color-f5f5f7);
 }
 /* Home Wrapper 2 End */
+/* Categories Section */
+.categories {
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+.categories > div {
+  width: 24%;
+}
+/* Categories Section End */
 /* Home Page End */

@@ -134,6 +134,44 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="categories d-flex justify-content-between aliign-items-center">
+                <div className="d-flex gap-30 align-items-center">
+                  <div>
+                    <h6>Music & Gaming</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="music and gaming" />
+                </div>
+                <div className="d-flex gap-30 align-items-center">
+                  <div>
+                    <h6>Cameras</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+                <div className="d-flex gap-30 align-items-center">
+                  <div>
+                    <h6>Smart Tv</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/tv.jpg" alt="tv" />
+                </div>
+                <div className="d-flex gap-30 align-items-center">
+                  <div>
+                    <h6>Smart Watches</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/watch.jpg" alt="watch" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
