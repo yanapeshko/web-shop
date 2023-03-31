@@ -288,4 +288,11 @@ fotter .input-group-text {
   top: 2%;
   right: 15px;
 } /* Product Card End */
+/* Special Product */
+.special-product-card {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* Special Product End */
 /* Home Page End */ ;
