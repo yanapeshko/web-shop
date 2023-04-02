@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SpecialProduct = () => {
   return (
-    <div className="col-6">
+    <div className="col-6 mb-3">
       <div className="special-product-card">
         <div className="d-flex justify-content-between">
           <div>
@@ -30,9 +30,9 @@ const SpecialProduct = () => {
                 <b>5</b>days
               </p>
               <div className="d-flex gap-10 align-items-center">
-                <span className="badge rounded-circle p-3 bg-warning">1</span>
-                <span className="badge rounded-circle p-3 bg-warning">1</span>
-                <span className="badge rounded-circle p-3 bg-warning">1</span>
+                <span className="badge rounded-circle p-3 bg-danger">1</span>
+                <span className="badge rounded-circle p-3 bg-danger">1</span>
+                <span className="badge rounded-circle p-3 bg-danger">1</span>
               </div>
             </div>
             <div className="product-count my-3">
