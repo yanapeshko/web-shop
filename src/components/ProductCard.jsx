@@ -22,7 +22,7 @@ const ProductCard = () => {
           </h5>
           <ReactStars
             count={5}
-            value="3"
+            value={4}
             edit={false}
             size={24}
             activeColor="#ffd700"

@@ -39,7 +39,9 @@ a {
 .input-group-text {
   background-color: var(--color-febd69);
 }
-
+.gap-5 {
+  gap: 5px;
+}
 .gap-10 {
   gap: 10px;
 }

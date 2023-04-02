@@ -224,7 +224,7 @@ const Home = () => {
               <h3 className="section-heading">Special Products</h3>
             </div>
           </div>
-          <div className="row">
+          <div className="row gap-5">
             <SpecialProduct />
             <SpecialProduct />
             <SpecialProduct />
