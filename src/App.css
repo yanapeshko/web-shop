@@ -301,7 +301,7 @@ fotter .input-group-text {
 /* Famous Card */
 .famous-card .famous-content {
   top: 10%;
-  left: 10%;
+  left: 5%;
 }
 .famous-card img {
   border-radius: 10px;
@@ -312,6 +312,7 @@ fotter .input-group-text {
   font-weight: 400;
   color: white;
   margin-bottom: 7px;
+  text-transform: uppercase;
 }
 .famous-content h6 {
   font-size: 28px;
