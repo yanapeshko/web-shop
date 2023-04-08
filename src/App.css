@@ -327,4 +327,18 @@ fotter .input-group-text {
   color: white;
 }
 /* Famous Card End */
+/* Our Store */
+.filter-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.filter-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+/* Our Store End */
 /* Home Page End */ ;
