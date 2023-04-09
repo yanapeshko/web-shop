@@ -341,18 +341,28 @@ fotter .input-group-text {
   color: var(--color-1c1c1b);
   margin-bottom: 20px;
 }
-.filter-card ul {
+.filter-card ul,
+.filter-card .form-check-label {
   list-style-type: none;
   font-size: 13px;
   line-height: 30px;
   color: var(--color-777777);
   cursor: pointer;
 }
+.filter-card .form-check-input:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+.filter-card .form-check-input:checked {
+  background-color: var(--color-febd69);
+  border-color: var(--color-febd69);
+}
 .sub-title {
   font-size: 14px;
   font-weight: 600;
   color: var(--color-1c1c1b);
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 /* Our Store End */
 /* Home Page End */ ;
