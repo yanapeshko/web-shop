@@ -14,16 +14,42 @@ const OurStore = () => {
               <div className="filter-card mb-3">
                 <h3>Shop By Categories</h3>
                 <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                  <ul className="ps-0">
+                    <li>Watch</li>
+                    <li>Tv</li>
+                    <li>Camera</li>
+                    <li>Laptop</li>
                   </ul>
                 </div>
               </div>
               <div className="filter-card mb-3">
                 <h3>Filter By</h3>
+                <div>
+                  <h5 className="sub-title">Availability</h5>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                    />
+                    <label className="form-check-label" htmlFor="">
+                      In Stock(1)
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id=""
+                      checked
+                    />
+                    <label className="form-check-label" htmlFor="">
+                      Out of Stock
+                    </label>
+                  </div>
+                </div>
               </div>
               <div className="filter-card mb-3">
                 <h3>Product Tags</h3>

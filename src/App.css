@@ -27,6 +27,7 @@
 }
 body {
   font-family: "Rubik", sans-serif;
+  background-color: var(--color-f5f5f7);
 }
 a {
   text-decoration: none;
@@ -329,7 +330,7 @@ fotter .input-group-text {
 /* Famous Card End */
 /* Our Store */
 .filter-card {
-  background-color: #fff;
+  background-color: white;
   border-radius: 10px;
   padding: 10px 15px;
 }
@@ -339,6 +340,19 @@ fotter .input-group-text {
   font-weight: 600;
   color: var(--color-1c1c1b);
   margin-bottom: 20px;
+}
+.filter-card ul {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+}
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 15px;
 }
 /* Our Store End */
 /* Home Page End */ ;
