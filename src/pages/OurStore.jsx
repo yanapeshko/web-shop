@@ -55,7 +55,7 @@ const OurStore = () => {
                     <div className="form-floating mb-3">
                       <input
                         type="email"
-                        className="form-control py-1"
+                        className="form-control"
                         id="floatingInput"
                         placeholder="From"
                       />
@@ -64,13 +64,36 @@ const OurStore = () => {
                     <div className="form-floating mb-3">
                       <input
                         type="email"
-                        className="form-control py-1"
+                        className="form-control"
                         id="floatingInput1"
                         placeholder="To"
                       />
                       <label htmlFor="floatingInput1">To</label>
                     </div>
                   </div>
+                  <h5 className="sub-title">Colors</h5>
+                  <div>
+                    <div className="d-flex flex-wrap">
+                      <ul className="colors">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h5 className="sub-title">Size</h5>
                 </div>
               </div>
               <div className="filter-card mb-3">
