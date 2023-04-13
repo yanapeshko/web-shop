@@ -52,7 +52,7 @@ const OurStore = () => {
                   </div>
                   <h5 className="sub-title">Price</h5>
                   <div className="d-flex align-items-center gap-10">
-                    <div className="form-floating mb-3">
+                    <div className="form-floating">
                       <input
                         type="email"
                         className="form-control"
@@ -98,10 +98,21 @@ const OurStore = () => {
                         className="form-check-input"
                         type="checkbox"
                         value=""
-                        id=""
+                        id="color-1"
                       />
-                      <label className="form-check-label" htmlFor="">
-                        In Stock(1)
+                      <label className="form-check-label" htmlFor="color-1">
+                        S(2)
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="color-2"
+                      />
+                      <label className="form-check-label" htmlFor="color-2">
+                        M(2)
                       </label>
                     </div>
                   </div>
@@ -109,9 +120,33 @@ const OurStore = () => {
               </div>
               <div className="filter-card mb-3">
                 <h3>Product Tags</h3>
+                <div>
+                  <div className="product-tags d-flex flex-wrap align-items-center gap-10">
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Headphones
+                    </span>
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Laptop
+                    </span>
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Mobile
+                    </span>
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Wire
+                    </span>
+                  </div>
+                </div>
               </div>
               <div className="filter-card mb-3">
                 <h3>Random Product</h3>
+                <div>
+                  <div className="random-products d-flex">
+                    <div className="w-25">
+                      <img src="images/watch.jpg" alt="watch" />
+                    </div>
+                    <div className="w-75"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-9"></div>
