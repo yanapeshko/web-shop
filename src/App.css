@@ -332,7 +332,7 @@ fotter .input-group-text {
 .filter-card {
   background-color: white;
   border-radius: 10px;
-  padding: 10px 15px 25px;
+  padding: 15px 15px 25px;
 }
 .filter-title {
   font-size: 16px;
@@ -376,6 +376,18 @@ fotter .input-group-text {
   height: 20px;
   background-color: red;
   border-radius: 50%;
+}
+.random-products h5 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.random-products:first-child {
+  border-bottom: 1px solid var(--color-ededed);
+}
+.filter-sort-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
 }
 /* Our Store End */
 /* Home Page End */ ;

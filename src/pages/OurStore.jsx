@@ -1,4 +1,5 @@
 import React from "react";
+import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 
@@ -140,16 +141,92 @@ const OurStore = () => {
               <div className="filter-card mb-3">
                 <h3>Random Product</h3>
                 <div>
-                  <div className="random-products d-flex">
-                    <div className="w-25">
-                      <img src="images/watch.jpg" alt="watch" />
+                  <div className="random-products mb-3 d-flex">
+                    <div className="w-50">
+                      <img
+                        className="img-fluid"
+                        src="images/watch.jpg"
+                        alt="watch"
+                      />
                     </div>
-                    <div className="w-75"></div>
+                    <div className="w-50">
+                      <h5>
+                        Kids headphones bulk 10 pack multi colored for students
+                      </h5>{" "}
+                      <ReactStars
+                        count={5}
+                        value={4}
+                        edit={false}
+                        size={24}
+                        activeColor="#ffd700"
+                      />
+                      <b>$ 300</b>
+                    </div>
+                  </div>
+                  <div className="random-products d-flex">
+                    <div className="w-50">
+                      <img
+                        className="img-fluid"
+                        src="images/watch.jpg"
+                        alt="watch"
+                      />
+                    </div>
+                    <div className="w-50">
+                      <h5>
+                        Kids headphones bulk 10 pack multi colored for students
+                      </h5>{" "}
+                      <ReactStars
+                        count={5}
+                        value={4}
+                        edit={false}
+                        size={24}
+                        activeColor="#ffd700"
+                      />
+                      <b>$ 300</b>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-9"></div>
+            <div className="col-9">
+              <div className="filter-sort-grid">
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="mb-0 d-block">Sort By:</p>
+                    <select
+                      className="form-control form-select"
+                      name="sort_by"
+                      id="SortBy"
+                      aria-describedby="ally-refresh-page-message"
+                    >
+                      <option value="manual">Featured</option>
+                      <option value="best-selling" selected="selected">
+                        Best Selling
+                      </option>
+                      <option value="title-ascending">
+                        Alphabetically, A-Z
+                      </option>
+                      <option value="title-descending">
+                        Alphabetically, Z-A
+                      </option>
+                      <option value="price-ascending">
+                        Price, low to high
+                      </option>
+                      <option value="price-descending">
+                        Price, high to low
+                      </option>
+                      <option value="created-ascending">
+                        Date, old to new
+                      </option>
+                      <option value="created-descending">
+                        Date, new to old
+                      </option>
+                    </select>
+                  </div>
+                  <div className="d-flex align-items-center gap-10"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
