@@ -389,5 +389,12 @@ fotter .input-group-text {
   background-color: white;
   border-radius: 10px;
 }
+.grid img {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  padding: 8px;
+  border-radius: 3px;
+}
 /* Our Store End */
 /* Home Page End */ ;
