@@ -249,6 +249,7 @@ fotter .input-group-text {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 .product-card .product-image {
   height: 270px;
@@ -395,6 +396,18 @@ fotter .input-group-text {
   background-color: #f2f2f2;
   padding: 8px;
   border-radius: 3px;
+}
+.gr-12 {
+  width: 100%;
+}
+.gr-6 {
+  width: 49%;
+}
+.gr-4 {
+  width: 32%;
+}
+.gr-3 {
+  width: 24%;
 }
 /* Our Store End */
 /* Home Page End */ ;
