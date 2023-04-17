@@ -25,7 +25,7 @@ const Blog = () => {
               </div>
             </div>
             <div className="col-9">
-              <div className="row">
+              <div className="d-flex gap-10">
                 <BlogCard />
               </div>
             </div>
