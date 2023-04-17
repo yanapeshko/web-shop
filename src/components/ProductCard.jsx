@@ -33,6 +33,12 @@ const ProductCard = (props) => {
               size={24}
               activeColor="#ffd700"
             />
+            <p className={`descriprion ${grid === 12 ? "d-block" : "d-none"}`}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+              cupiditate minus! Praesentium qui velit vero nam quisquam
+              incidunt, atque eum, inventore recusandae voluptas eaque libero
+              animi optio, dolores magnam esse!
+            </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
@@ -77,6 +83,12 @@ const ProductCard = (props) => {
               size={24}
               activeColor="#ffd700"
             />
+            <p className={`descriprion ${grid === 12 ? "d-block" : "d-none"}`}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+              cupiditate minus! Praesentium qui velit vero nam quisquam
+              incidunt, atque eum, inventore recusandae voluptas eaque libero
+              animi optio, dolores magnam esse!
+            </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
