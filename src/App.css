@@ -334,6 +334,7 @@ fotter .input-group-text {
   color: white;
 }
 /* Famous Card End */
+/* Home Page End */
 /* Our Store */
 .filter-card {
   background-color: white;
@@ -434,4 +435,20 @@ fotter .input-group-text {
   top: 17%;
 }
 /* Our Store End */
-/* Home Page End */ ;
+/* Contact Page */
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+.contact-inner-wrapper > div {
+  width: 48%;
+}
+.contact-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+/* Contact Page End */
