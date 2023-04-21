@@ -460,4 +460,8 @@ fotter .input-group-text {
 .contact-inner-wrapper ul {
   list-style: none;
 }
-/* Contact Page End */
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p {
+  color: var(--color-777777);
+} /* Contact Page End */

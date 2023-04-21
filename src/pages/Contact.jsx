@@ -72,7 +72,7 @@ const Contact = () => {
                     <ul className="ps-0">
                       <li className="mb-3 d-flex gap-15 align-items-center">
                         <AiOutlineHome className="fs-5" />
-                        <address>
+                        <address className="mb-0">
                           26 Lugano Crescent, Markham, L6E1E3, ON, Canada
                         </address>
                       </li>
