@@ -38,16 +38,16 @@ const Footer = () => {
               <h4 className="text-white mb-4">Contact us</h4>
               <div>
                 <address className="text-white fs-6">
-                  Hno : 277 Near Vill chopal, <br />
-                  Sonipat, Haryana
+                  26 Lugano Crescent <br />
+                  L6E1E3, Markham,
                   <br />
-                  PinCode: 131103
+                  ON, Canada
                 </address>
                 <a
-                  href="tel:+91 8264954234"
+                  href="tel:+1 4373312094"
                   className="mt-3 d-block mb-1 text-white"
                 >
-                  +91 8264954234
+                  +1 4373312094
                 </a>
                 <a
                   href="mailto:yanapeshko917@gmail.com "
