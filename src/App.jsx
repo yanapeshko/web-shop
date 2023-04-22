@@ -10,6 +10,7 @@ import OurStore from "./pages/OurStore";
 import Blog from "./pages/Blog";
 import CompareProduct from "./pages/CompareProduct";
 import WishList from "./pages/WishList";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="blogs" element={<Blog />} />
             <Route path="compare-product" element={<CompareProduct />} />
             <Route path="wishlist" element={<WishList />} />
+            <Route path="login" element={<Login />} />
           </Route>
         </Routes>
       </BrowserRouter>
