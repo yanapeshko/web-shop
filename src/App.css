@@ -515,6 +515,10 @@ fotter .input-group-text {
   font-weight: 500;
   color: var(--color-777777);
 }
+.auth-card p {
+  font-size: 13px;
+  color: var(--color-777777);
+}
 .auth-card .form-control {
   height: 50px;
   background-color: var(--color-f5f5f7);
