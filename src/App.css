@@ -242,7 +242,22 @@ fotter .input-group-text {
   font-size: 13px;
   line-height: 22px;
   color: var(--color-777777);
-} /* Blog End */
+}
+.single-blog-card a {
+  font-size: 18px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+}
+.single-blog-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+}
+.single-blog-card p {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+/* Blog End */
 /* Product Card */
 .product-card {
   padding: 15px;
