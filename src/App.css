@@ -556,3 +556,9 @@ fotter .input-group-text {
   color: white;
 }
 /* Auth Card End */
+/* Policy Pages */
+.policy {
+  background-color: #fff;
+  padding: 30px;
+}
+/* Policy Pages End */
