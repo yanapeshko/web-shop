@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
+import ReactImageZoom from "react-image-zoom";
 
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 
 const SingleProduct = () => {
+  const props = {
+    width: 250,
+    height: 250,
+    zoomWidth: 500,
+    img: "https://m.media-amazon.com/images/I/61BJ8NGdBCL._AC_SY355_.jpg",
+  };
   const [orederedProduct, setorederedProduct] = useState(true);
   return (
     <>
@@ -14,8 +21,66 @@ const SingleProduct = () => {
       <div className="main-product-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6"></div>
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-image">
+                <div>
+                  <ReactImageZoom {...props} />
+                </div>
+              </div>
+              <div className="other-product-images d-flex flex-wrap gap-15">
+                <div>
+                  <img
+                    className="img-fluid"
+                    src="https://m.media-amazon.com/images/I/61BJ8NGdBCL._AC_SY355_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="img-fluid"
+                    src="https://m.media-amazon.com/images/I/61BJ8NGdBCL._AC_SY355_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="img-fluid"
+                    src="https://m.media-amazon.com/images/I/61BJ8NGdBCL._AC_SY355_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    className="img-fluid"
+                    src="https://m.media-amazon.com/images/I/61BJ8NGdBCL._AC_SY355_.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              <div className="main-product-details">
+                <div className="border-bottom">
+                  <h3 className="title">
+                    Kids Headphones Bulk 10 Pack Multi Colored For Students
+                  </h3>
+                </div>
+                <div className="border-bottom py-3">
+                  <p className="price">$ 100</p>
+                  <div className="d-flex align-items-center gap-10">
+                    <ReactStars
+                      count={5}
+                      value={4}
+                      edit={false}
+                      size={24}
+                      activeColor="#ffd700"
+                    />
+                    <p className="mb-0">( 2 Reviews)</p>
+                  </div>
+                  <a href="#review">Write a Review</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -41,7 +106,7 @@ const SingleProduct = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3>Reviews</h3>
+              <h3 id="review">Reviews</h3>
               <div className="review-inner-wrapper">
                 <div className="review-head d-flex justify-content-between align-items-end">
                   <div>
