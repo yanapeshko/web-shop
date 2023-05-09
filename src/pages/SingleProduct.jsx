@@ -1,19 +1,31 @@
 import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from "react-image-zoom";
+import { MdWifiProtectedSetup } from "react-icons/md";
+import { AiOutlineHeart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
+import Color from "../components/Color";
 
 const SingleProduct = () => {
   const props = {
     width: 250,
-    height: 250,
-    zoomWidth: 500,
+    height: 300,
+    zoomWidth: 600,
     img: "https://m.media-amazon.com/images/I/61BJ8NGdBCL._AC_SY355_.jpg",
   };
   const [orederedProduct, setorederedProduct] = useState(true);
+  const copyToClipboard = (text) => {
+    var textField = document.createElement("textarea");
+    textField.innerText = text;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
+  };
   return (
     <>
       <Meta title={"Product Name"} />
@@ -75,9 +87,106 @@ const SingleProduct = () => {
                       size={24}
                       activeColor="#ffd700"
                     />
-                    <p className="mb-0">( 2 Reviews)</p>
+                    <p className="mb-0 t-review">( 2 Reviews)</p>
                   </div>
-                  <a href="#review">Write a Review</a>
+                  <a className="review-btn" href="#review">
+                    Write a Review
+                  </a>
+                </div>
+                <div className="py-3">
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Type :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Brand :</h3>
+                    <p className="product-data">Havells</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Category :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Tags :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Availability :</h3>
+                    <p className="product-data">In Stock</p>
+                  </div>
+                  <div className="d-flex gap-10 felx-column mt-2 mb-3">
+                    <h3 className="product-heading">Size :</h3>
+                    <div className="d-flex flex-wrap gap-15">
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        S
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        M
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        XL
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        XXL
+                      </span>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 felx-column mt-2 mb-3">
+                    <h3 className="product-heading">Color :</h3>
+                    <Color />
+                  </div>
+                  <div className="d-flex align-items-center gap-15 felx-row mt-2 mb-3">
+                    <h3 className="product-heading">Quantity :</h3>
+                    <div>
+                      <input
+                        className="form-control"
+                        type="number"
+                        name=""
+                        min={1}
+                        max={10}
+                        style={{ width: "60px" }}
+                        id=""
+                      />
+                    </div>
+                    <div className="d-flex align-items-center gap-30 ms-5">
+                      <button className="button border-0">ADD TO CART</button>
+                      <button className="button signup">Buy It Now</button>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-15">
+                    <div>
+                      <a href="#">
+                        <MdWifiProtectedSetup className="fs-5 me-2" />
+                        Add to Compare
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#">
+                        <AiOutlineHeart className="fs-5 me-2" />
+                        Add to Wishlist
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex flex-column gap-10 my-3">
+                    <h3 className="product-heading">Shipping & Returns :</h3>
+                    <p className="product-data">
+                      Free shipping and returns available on all orders! <br />
+                      We ship all US domestic orders within 5-10 business days!
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-3">
+                    <h3 className="product-heading">Product Link :</h3>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={() => {
+                        copyToClipboard(
+                          "https://m.media-amazon.com/images/I/61BJ8NGdBCL._AC_SY355_.jpg"
+                        );
+                      }}
+                    >
+                      Copy
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -124,12 +233,7 @@ const SingleProduct = () => {
                   </div>
                   {orederedProduct && (
                     <div>
-                      <a
-                        className="text-dark text-decoration-underline"
-                        href=""
-                      >
-                        Write a Review
-                      </a>
+                      <Link className="text-dark text-decoration-underline" />
                     </div>
                   )}
                 </div>

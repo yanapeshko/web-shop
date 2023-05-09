@@ -2,6 +2,11 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 
+import compare from "../images/compare.svg";
+import wishlist from "../images/wishlist.svg";
+import user from "../images/user.svg";
+import cart from "../images/cart.svg";
+
 const Header = () => {
   return (
     <>
@@ -53,7 +58,7 @@ const Header = () => {
                     to="/compare-product"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/compare.svg" alt="compare" />
+                    <img src={compare} alt="compare" />
                     <p className="mb-0">
                       Compare
                       <br />
@@ -66,7 +71,7 @@ const Header = () => {
                     to="/wishlist"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/wishlist.svg" alt="wishlist" />
+                    <img src={wishlist} alt="wishlist" />
                     <p className="mb-0">
                       Favourite
                       <br />
@@ -79,7 +84,7 @@ const Header = () => {
                     to="/login"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/user.svg" alt="user" />
+                    <img src={user} alt="user" />
                     <p className="mb-0">
                       Login
                       <br />
@@ -92,7 +97,7 @@ const Header = () => {
                     to="cart"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="images/cart.svg" alt="cart" />
+                    <img src={cart} alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
                       <p className="mb-0">$ 500</p>
