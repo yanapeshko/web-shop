@@ -15,6 +15,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
 import SingleBlog from "./pages/SingleBlog";
+import Cart from "./pages/Cart";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import ShippingPolicy from "./pages/ShippingPolicy";
@@ -34,6 +35,7 @@ function App() {
             <Route path="product/:id" element={<SingleProduct />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="blog/:id" element={<SingleBlog />} />
+            <Route path="cart" element={<Cart />} />
             <Route path="compare-product" element={<CompareProduct />} />
             <Route path="wishlist" element={<WishList />} />
             <Route path="login" element={<Login />} />
